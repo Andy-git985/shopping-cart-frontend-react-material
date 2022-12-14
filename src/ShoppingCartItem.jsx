@@ -1,27 +1,27 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
+import React from 'react';
+import { makeStyles } from '@mui/styles';
+import { Card } from '@mui/material';
+import { CardActions } from '@mui/material';
+import { CardContent } from '@mui/material';
+import { CardMedia } from '@mui/material';
+import { Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    marginTop: 15
+    display: 'flex',
+    marginTop: 15,
   },
   details: {
-    display: "flex",
-    flexDirection: "column"
+    display: 'flex',
+    flexDirection: 'column',
   },
   content: {
-    flex: "1 0 auto"
+    flex: '1 0 auto',
   },
   cover: {
-    width: 151
-  }
+    width: 151,
+  },
 }));
 
 export default function ShoppingCartItem() {
@@ -48,7 +48,7 @@ export default function ShoppingCartItem() {
           Category
         </Typography>
         <Typography variant="div" component="h2">
-          Item Name{" "}
+          Item Name{' '}
         </Typography>
         <Typography variant="subtitle2">
           <hr />
@@ -78,7 +78,7 @@ export default function ShoppingCartItem() {
             <Typography
               variant="body1"
               component="div"
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: 'bold' }}
             >
               Price
             </Typography>
